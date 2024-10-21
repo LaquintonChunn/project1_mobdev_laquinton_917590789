@@ -12,14 +12,21 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            // Username Text Field
+
             TextField(
               controller: _usernameController,
               decoration: InputDecoration(labelText: 'Username'),
             ),
+
             SizedBox(height: 20),
+
+            // Login Button
+
             ElevatedButton(
               onPressed: () {
                 // Navigate to HomeScreen and pass the username as an argument
+
                 Navigator.pushReplacementNamed(
                   context,
                   '/home',
